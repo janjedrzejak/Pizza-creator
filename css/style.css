@@ -61,6 +61,11 @@ span {
 			margin:10px 10px 10px 10px;
 		}
 
+			#time {
+				text-align: center; 
+				font-size: 32px;
+			}
+
 		input[type=text] {
 			width:137px; 
 			height:37px; 
