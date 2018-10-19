@@ -3,69 +3,56 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Pizza maker!</title>
-  <meta name="author" content="SitePoint">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script> 
-$(document).ready(function(){
-    $(".salami").click(function(){
-        $("#salami").animate({top: '0px'});
-    });
-});
-$(document).ready(function(){
-    $(".ham").click(function(){
-        $("#ham").animate({top: '0px'});
-    });
-});
-$(document).ready(function(){
-    $(".pieczarki").click(function(){
-        $("#pieczarki").animate({top: '0px'});
-    });
-});
-$(document).ready(function(){
-    $(".jalapeno").click(function(){
-        $("#jalapeno").animate({top: '0px'});
-    });
-});
-$(document).ready(function(){
-    $(".cheese").click(function(){
-        $("#cheese").animate({top: '0px'});
-    });
-});
-</script> 
+	<title>Pizza maker!</title>
+	<meta name="author" content="SitePoint">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/toppings.js"></script> 
 </head>
 
 <body>
   <div class="container">
   	<div class="pizza">
-	  	<img id="jalapeno" 	src="img/jalapeno.png" 	style="z-index:-2; top:-400px;">
+	  	<img id="jalapeno" 	src="img/jalapeno.png" 	style="z-index:-1; top:-400px;">
+	  	<img id="tomatoes" src="img/tomatoes.png" 	style="z-index:-2; top:-400px;">
 	  	<img id="pieczarki" src="img/pieczarki.png" style="z-index:-3; top:-400px;">
+	  	<img id="onion" 	src="img/onion.png" 	style="z-index:-3; top:-400px;">
+	  	<img id="paprica" 	src="img/paprica.png" 	style="z-index:-3; top:-400px;">
 	  	<img id="ham" 		src="img/ham.png" 		style="z-index:-4; top:-400px;">
 	  	<img id="salami" 	src="img/salami.png" 	style="z-index:-5; top:-400px;">
 	  	<img id="cheese" 	src="img/cheese.png" 	style="z-index:-6; top:-400px;">	
-	  	<img id="pizza" 	src="img/pizza.png" 	style="z-index:-7;">	
+	  	<img id="pizza" 	src="img/pizza.png" 	style="z-index:-7;">
 	 </div>
-<!--
-  	<img class="w3-animate-top" src="img/svg/jalapeno.svg" style="position:absolute; z-index:-2;width:70%; margin-left:100px; margin-top:20px;">
-	<img class="w3-animate-top" src="img/svg/ham.svg" style="position:absolute;z-index:-3;width:70%; margin-left:100px; margin-top:20px;">
-	<img class="w3-animate-top" src="img/svg/salami.svg" style="position:absolute; z-index:-4;width:70%; margin-left:100px; margin-top:20px;">
-	<img class="w3-animate-top" src="img/svg/pieczarki.svg" style="position:absolute; z-index:-5;width:70%; margin-left:100px; margin-top:20px;">	
-	<img class="w3-animate-top" src="img/svg/cheese.svg" style="position:absolute; z-index:-6; width:90%; margin-left:20px; margin-top:10px;">
-	<img src="img/svg/pizza.svg" style="position:absolute; z-index:-7;">
--->
-  	
+	 <div id="box" style="position:relative;top:700px; left:-5%;">
+  		<img src="img/box_front.png" style="z-index:-1; width:80%; ">	
+  		<img src="img/box_bottom.png" style="z-index:-8; width:80%;">	
+  	</div>
 	<div class="box">
 		<div class="into">
-			<span>Dobierz składniki:</span><br>
-			<a href="#" class="salami">salami</a>
-			<a href="#" class="jalapeno">jalapeno</a>
-			<a href="#" class="ham">szynka</a>
-			<a href="#" class="pieczarki">pieczarki</a>
-			<a href="#" class="cheese">ser</a>
+			<span>Podaj swoje dane</span><br>
+				<form action="#" method="POST">
+					<input type="text" placeholder="imię i nazwisko">
+					<input type="text" placeholder="e-mail">
+					<input type="text" placeholder="miejscowość">
+					<input type="text" placeholder="numer domu">
+					<input type="text" placeholder="numer mieszkania">
+					<input type="text" placeholder="numer telefonu">
+				</form>
+			<span>Dobierz składniki</span><br>
+					<a href="#" class="salami">salami</a>
+					<a href="#" class="jalapeno">jalapeno</a>
+					<a href="#" class="ham">szynka</a>
+					<a href="#" class="paprica">papryka</a>
+					<a href="#" class="onion">cebula</a>
+					<a href="#" class="tomatoes">pomidory</a>
+					<a href="#" class="pieczarki">pieczarki</a>
+					<a href="#" class="cheese">ser</a>
+					<a href="#" class="pizza_box">zapakuj</a>
+				<hr>
+			<span>Podsumowanie</span>
+					<a href="#" class="order">zamów</a>
 		</div>
 	</div>
   </div>

@@ -4,10 +4,11 @@ body {
 
 .container {
 	width:100%;
+	overflow: hidden;
 }
 
 .pizza {
-	left:10%;
+	left:5%;
 	top:20%;
    	width: 50%;
   	margin: 0 auto;
@@ -20,7 +21,7 @@ img {
 	
 span {
 	padding:10px;
-	font-weight: bold;
+	font-weight: thin;
 	font-size:18px;
 }
 	.box {
@@ -32,68 +33,44 @@ span {
 		padding: 30px;
 	}
 
-a.salami { 
-	width:137px; 
-	height:37px; 
-	padding:5px;
-	background-color: #ddd; 
-	border-style: none; 
-	color: #444; 
-	font-size: 16px; 
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin:10px 10px 10px 10px; 
-}
-a.jalapeno { 
-	width:137px; 
-	height:37px; 
-	padding:5px;
-	background-color: #ddd; 
-	border-style: none; 
-	color: #444; 
-	font-size: 16px; 
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin:10px 10px 10px 10px;
-}
-a.ham { 
-	width:137px; 
-	height:37px; 
-	padding:5px;
-	background-color: #ddd; 
-	border-style: none; 
-	color: #444; 
-	font-size: 16px; 
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin:10px 10px 10px 10px; 
-}
-a.cheese { 
-	width:137px; 
-	height:37px; 
-	padding:5px;
-	background-color: #ddd; 
-	border-style: none; 
-	color: #444; 
-	font-size: 16px; 
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin:10px 10px 10px 10px;
-}
-a.pieczarki { 
-	width:137px; 
-	height:37px; 
-	padding:5px;
-	background-color: #ddd; 
-	border-style: none; 
-	color: #444; 
-	font-size: 16px; 
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin:10px 10px 10px 10px; 
-}
+		.into a { 
+			width:137px; 
+			height:37px; 
+			padding:5px;
+			background-color: #ddd; 
+			border-style: none; 
+			color: #444; 
+			font-size: 16px; 
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			margin:10px 10px 10px 10px; 
+		} 
+
+		.into a.order {
+			width:95%; 
+			height:37px; 
+			padding:5px;
+			background-color: #ddd; 
+			border-style: none; 
+			color: #444; 
+			font-size: 16px; 
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			margin:10px 10px 10px 10px;
+		}
+
+		input[type=text] {
+			width:137px; 
+			height:37px; 
+			padding:5px;
+			background-color: white; 
+			border-style: 1px solid; 
+			color: #444; 
+			font-size: 16px; 
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			margin:10px 10px 10px 10px; 
+		}
