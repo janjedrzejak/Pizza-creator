@@ -8,5 +8,5 @@ Simple pizza creator is a front-end application to pizza ordering with friendly 
 ![Screen](https://github.com/janjedrzejak/Pizza-creator/blob/demo/demo/3.png?raw=true)
 
 ## Quick install
-Clone this repository
-Open index.html in a web browser
+* Clone this repository
+* Open index.html in a web browser
