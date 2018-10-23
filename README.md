@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Pizza-creator
 Simple pizza creator is a front-end application to pizza ordering with friendly layout. 
 
